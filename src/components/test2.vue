@@ -37,9 +37,10 @@
         }
       },
       do1() {
-        this.ctx.clearRect(0,0,this.width,this.height)
-        this.ctx.fillStyle='green'
-        this.ctx.fillRect(0,0,100,100)
+        var ctx=this.ctx
+        var data = this.ctx.getImageData(0,0,this.width,this.height) ;
+        let data32 = new Uint32Array(data.data.buffer) ;
+        console.log('data32',data32)
       }
     },
     mounted () {
