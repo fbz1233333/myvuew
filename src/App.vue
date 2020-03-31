@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <router-link to="/test1">test1</router-link>
-    <router-link to="/test2">test2</router-link>
     <router-view/>
   </div>
 </template>
@@ -14,11 +12,6 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>
